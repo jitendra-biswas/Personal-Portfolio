@@ -200,7 +200,7 @@ main{
 }
 
 .remember p a{
-    color: #fff;
+    color: var(--secondary-color);
     text-decoration: none;
     margin-left: 1vw;
 }
@@ -215,12 +215,12 @@ main{
     font-weight: bold;
     font-size: 15px;
     background-color: #7269ef;
-    color: white;
+    color: var(--secondary-color);
 }
 
 .form1 button:hover{
     background-color: rgb(92, 84, 210);
-    color: white;
+    color: var(--secondary-color);
     cursor: pointer;
     transition: background-color 0.2s;
 }
@@ -232,7 +232,7 @@ main{
 .form1 .register a{
     text-decoration: none;
     font-weight: bold;
-    color: #fff;
+    color: var(--secondary-color);
     
 }
 
@@ -242,12 +242,12 @@ main{
     border: 2px solid rgb(47, 56, 111);
     border-radius: 15px;
     left: 50%;
-    top: 50%;
+    top: 55%;
     transform: translate(-50% , -50%);
     position: absolute;
     padding: 10px 35px;
-    background-color: #262e35;
-    color: #fff;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
     display: none;
 }
 
@@ -266,14 +266,14 @@ main{
   background-color: transparent;
   border: none;
   outline: none;
-  border-bottom: 2px solid #fff;
-  color:#ffff;
+  border-bottom: 2px solid var(--secondary-color);
+  color:var(--secondary-color);
   font-size: 15px;
 }
 
 .form .signup{
     background-color: #7269ef;
-    color: white;
+    color: var(--secondary-color);
     border-radius: 15px;
     padding: 10px;
     margin-top: 15px;
@@ -284,7 +284,7 @@ main{
 .form .signup:hover{
     cursor: pointer;
     background-color: #433d96;
-    color: white;
+    color: var(--secondary-color);
     transition: background-color 0.2s ;
 }
 
@@ -295,7 +295,7 @@ main{
 
 .form p a{
     text-decoration: none;
-    color: #fff;
+    color: var(--secondary-color);
 }
 
 .form #or{
@@ -311,12 +311,12 @@ main{
     border: 1.5px solid rgb(43, 43, 43);
     border-radius: 15px;
     margin-top: 10px;
-    background-color: #3e4a56;
+    background-color: var(--primary-color);
 }
 
 .form .with-container:hover{
     cursor: pointer;
-    background-color: #2e3645;
+    background-color: var(--primary-color);
 }
 .form img{
     width: 35px;
@@ -324,7 +324,7 @@ main{
 
 .form button{
     background-color: transparent;
-    color: #fff;
+    color: var(--secondary-color);
     border: none;
     outline: none;
     font-size: 17px;
