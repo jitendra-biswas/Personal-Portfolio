@@ -327,14 +327,6 @@ main{
     
 }
 
-.loggin{
-    height: calc(100vh - 70px);
-    width: 100vw;
-    background-color: var(--primary-color);
-    display: none;
-}
-
-
 
 @media (max-width:870px) {
 
