@@ -7,14 +7,14 @@ sun.addEventListener("click", function(){
     sun.style.display = "none"
     moon.style.display = "block"
     document.body.classList.toggle("white-theme")
-  
+
 });
 
 moon.addEventListener("click", function(){
     sun.style.display = "block"
     moon.style.display = "none"
     document.body.classList.toggle("white-theme")
-  
+
 });
 
 var check = 0;
@@ -35,44 +35,38 @@ bar.addEventListener("click",function(){
 
 
 
-// sbtn = document.querySelector(".mode #no");
-// full = document.querySelector("main");
-// log = document.querySelector(".loggin");
-// res_log = document.querySelector("#sign-in-btn");
+ sbtn = document.querySelector(".mode #no");
+ full = document.querySelector("main");
+ log = document.querySelector(".loggin");
+ 
 
-// sbtn.addEventListener("click",function(){
-//     full.style.display = "none"
-//     log.style.display = "block"
-//     sbtn.style.display = "none"
-    
-// });
+ sbtn.addEventListener("click",function(){
+     full.style.display = "none"
+     log.style.display = "block"
+     sbtn.style.display = "none"
 
-// res_log = document.querySelector("#sign-in-btn");
-// res_log.addEventListener("click",function(){
-//     full.style.display = "none"
-//     log.style.display = "block"
-    
-// });
+ });
 
+ res_log = document.querySelector(".button #sign-in-btn");
+ res_log.addEventListener("click",function(){
+     full.style.display = "none"
+     log.style.display = "block"
 
+ });
 
+ var signin = document.querySelector(".form1")
+var signup = document.querySelector(".form")
+var register = document.querySelector(".register")
+var login = document.querySelector(".login")
 
+register.addEventListener("click", function(){
+    signup.style.display = "block"
+    signin.style.display = "none"
+});
 
-// var signin = document.querySelector(".form1");
-// var signup = document.querySelector(".form");
-// var register = document.querySelector(".register");
-// var login = document.querySelector(".login");
-
-// register.addEventListener("click", function(){
-//     signup.style.display = "block"
-//     signin.style.display = "none"
-// });
-
-// login.addEventListener("click", function(){
-//     signup.style.display = "none"
-//     signin.style.display = "block"
-// });
-
-
+login.addEventListener("click", function(){
+    signup.style.display = "none"
+    signin.style.display = "block"
+});
 
 
