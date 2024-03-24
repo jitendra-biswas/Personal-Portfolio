@@ -33,6 +33,12 @@ nav h2{
     color: var(--secondary-color);
 }
 
+nav h2 a{
+    color: var(--secondary-color);
+    cursor: pointer;
+    text-decoration: none;
+}
+
 nav h2 span{
        color: rgb(229, 5, 5);
 }
@@ -207,6 +213,7 @@ padding-left: 7%;
     display: flex;
     gap: 5vw;
 }
+
 
 .content1 .button #sign-in-btn{
     display: none;

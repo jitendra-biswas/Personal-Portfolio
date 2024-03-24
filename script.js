@@ -3,6 +3,7 @@ var moon = document.querySelector("#moon");
 var sidenav = document.querySelector(".sidenav")
 var bar = document.querySelector("#bar")
 
+
 sun.addEventListener("click", function(){
     sun.style.display = "none"
     moon.style.display = "block"
@@ -38,6 +39,7 @@ bar.addEventListener("click",function(){
  sbtn = document.querySelector(".mode #no");
  full = document.querySelector("main");
  log = document.querySelector(".loggin");
+ lbtn = document.querySelector(".content1 #sign-in-btn")
  
 
  sbtn.addEventListener("click",function(){
@@ -47,12 +49,14 @@ bar.addEventListener("click",function(){
 
  });
 
- res_log = document.querySelector(".button #sign-in-btn");
- res_log.addEventListener("click",function(){
-     full.style.display = "none"
-     log.style.display = "block"
+ log = document.querySelector(".loggin");
+ lbtn = document.querySelector(".content1 #sign-in-btn")
+ bar = document.querySelector(".mode #bar")
+ lbtn.addEventListener("click",function(){
+    log.style.display = "block"
+    bar.style.display = "none"
+ })
 
- });
 
  var signin = document.querySelector(".form1")
 var signup = document.querySelector(".form")
