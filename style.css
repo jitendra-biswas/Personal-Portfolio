@@ -61,6 +61,11 @@ nav .elements li a{
      color: var(--secondary-color);
 }
 
+
+nav .elements li #home{
+    color: #f63f48;
+}
+
 nav .elements li a:hover{
     cursor: pointer;
     color: #f63f48;
