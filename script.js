@@ -52,9 +52,11 @@ bar.addEventListener("click",function(){
  log = document.querySelector(".loggin");
  lbtn = document.querySelector(".content1 #sign-in-btn")
  bar = document.querySelector(".mode #bar")
+ full = document.querySelector("main");
  lbtn.addEventListener("click",function(){
     log.style.display = "block"
     bar.style.display = "none"
+    full.style.display = "none"
  })
 
 

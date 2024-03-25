@@ -30,3 +30,4 @@ bar.addEventListener("click",function(){
         check = 0;
     }
 });
+
