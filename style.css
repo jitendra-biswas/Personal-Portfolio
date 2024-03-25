@@ -426,7 +426,7 @@ main{
 }
 
 .form .signup{
-    background-color: var(--primary-color);
+    background-color: #7269ef;
     color: var(--secondary-color);
     border-radius: 15px;
     padding: 10px;
@@ -437,9 +437,9 @@ main{
 
 .form .signup:hover{
     cursor: pointer;
-    background-color: var(--primary-color);
+    background-color: rgb(92, 84, 210);
     color: var(--secondary-color);
-    transition: background-color 0.2s ;
+    transition: background-color 0.2s ease-in-out ;
 }
 
 .form P{
