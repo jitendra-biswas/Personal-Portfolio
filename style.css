@@ -297,6 +297,7 @@ main{
 
 .profile #anish{
     width: 400px;
+    filter: contrast(1.3);
     
 }
 
