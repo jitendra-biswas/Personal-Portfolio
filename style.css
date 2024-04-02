@@ -3,7 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    scrollbar-width: 0;
+    overflow: hidden;
     
 }
 
@@ -178,7 +178,7 @@ height: calc(100vh - 70px);
 display: flex;
 flex-direction: column;
 justify-content: center;
-padding-left: 7%;
+padding-left: 10%;
 
 
 }
@@ -186,7 +186,7 @@ padding-left: 7%;
 .content1 h1{
     width: fit-content;
     background-color: transparent;
-    font-size: 50px;
+    font-size: 60px;
     animation-name: h1;
     animation-duration: 3s;
      color: var(--secondary-color);
@@ -277,17 +277,16 @@ main{
 
 .profile{
     width: 45%;
-    height: 100%;
-  
-    
+    height: 95%;
+ 
 }
 
 .profile img{
     position: absolute;
-    top: 55.4%;
-    left: 80%;
+    top: 58%;
+    left: 75%;
     transform: translate(-50% , -50%);
-
+    
 }
 
 .profile #back{
@@ -297,9 +296,7 @@ main{
 
 
 .profile #anish{
-    width: 380px;
-    animation-name: image;
-   animation-duration: 3s;
+    width: 400px;
     
 }
 
