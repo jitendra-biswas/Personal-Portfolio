@@ -188,13 +188,13 @@ padding-left: 10%;
     background-color: transparent;
     font-size: 60px;
     animation-name: h1;
-    animation-duration: 3s;
+    animation-duration: 2.5s;
      color: var(--secondary-color);
 
 }
 
 @keyframes h1 {
-    from{margin-left: -50px;}
+    from{margin-left: -100px;}
     to{margin-left: 0px;}
 }
 
@@ -207,13 +207,13 @@ padding-left: 10%;
     font-size: 17px;
     margin-top: 3vh;
     animation-name: p;
-    animation-duration: 3s;
+    animation-duration: 2s;
      color: var(--secondary-color);
 }
 
 @keyframes p {
-    from{margin-left: 50px;}
-    to{margin-left: 0px;}
+    from{margin-top: -100px;}
+    to{margin-top:20px;}
 }
 .content1 .button{
     display: flex;
@@ -286,9 +286,15 @@ main{
     top: 58%;
     left: 75%;
     transform: translate(-50% , -50%);
-    
+    animation-name: img;
+    animation-duration: 2s;
 }
 
+@keyframes img {
+    from{margin-left: 100px;}
+    to{margin-left: 0px;}
+    
+}
 .profile #back{
     width: 500px;
     
@@ -414,4 +420,8 @@ main{
         color: var(--primary-color);
     }
 
+    @keyframes p {
+        from{margin-top: -100px;}
+        to{margin-top:5px;}
+    }
 }
