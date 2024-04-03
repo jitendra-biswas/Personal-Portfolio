@@ -3,7 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    overflow: hidden;
+    scrollbar-width: 0px;
     
 }
 
@@ -179,7 +179,7 @@ nav .sidenav .elements a:hover{
 section .content{
     height: fit-content;
     background-color: var(--primary-color);
-    padding-bottom: 100px;
+
 }
 
 .content .content1{
@@ -293,13 +293,11 @@ section .content{
     }
 
     section .content{
-        height:100vh;
+        height:fit-content;
         background-color: var(--primary-color);
         display: flex;
         flex-direction: column;
         align-items: center;
-        padding-bottom: -150px;
-        
     }
 
     .content .profile{
@@ -311,7 +309,6 @@ section .content{
         background-position-x: Top center;
         border-radius: 50%;
         margin-left: 0px;
-        margin-bottom: -40px;
         
     }
 
@@ -340,13 +337,10 @@ section .content{
         
     }
 
-    .social-media{
-        background-color: var(--primary-color);
-    }
-
     .icon{
         margin-left: -100px;
         margin-top: -30px;
+       
     }
 
     .icon p{
