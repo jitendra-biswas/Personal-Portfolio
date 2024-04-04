@@ -290,4 +290,9 @@ nav .sidenav .elements a:hover{
     .mode #bar {
         display: block;
     }
+
+    .main{
+       height: fit-content;
+       padding-bottom: 50px;
+    }
 }
