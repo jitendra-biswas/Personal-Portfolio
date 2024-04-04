@@ -220,6 +220,10 @@ padding-left: 10%;
     gap: 5vw;
 }
 
+.content1 .button #btn a{
+    color: var(--primary-color);
+    text-decoration: none;
+}
 
 .content1 .button #sign-in-btn{
     display: none;

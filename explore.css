@@ -3,7 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    scrollbar-width: 0;
+    scrollbar-width: 0px;
     
 }
 
@@ -18,7 +18,9 @@
     --secondary-color: white;
 }
 
-body{
+.main{
+    width: 100vw;
+    height: 100vh;
     background-color: var(--primary-color);
 }
 
@@ -65,7 +67,7 @@ nav .elements li a{
      color: var(--secondary-color);
 }
 
-nav .elements li #contact{
+nav .elements li #about{
     color: #f63f48;
 }
 
@@ -129,6 +131,19 @@ nav .elements li a:hover{
     display: none;
 }
 
+.icon-bar{
+    width: 18%;
+    height: 50%;
+    border: 1px solid rgb(105, 105, 105);
+    position: absolute;
+    top:80px;
+    left: 80%;
+    padding: 15px;
+    border-radius: 15px;
+    display: none;
+    
+}
+
 nav .sidenav{
     position: absolute;
     width: 35%;
@@ -163,133 +178,116 @@ nav .sidenav .elements a:hover{
     display: none;
 }
 
-.content{
-    width: 100vw;
-    height: calc(100vh - 70px);
-    display: flex;
-    align-items: center;
-    gap:20vw;
-    background-color: var(--primary-color);
-}
-
-.caption{
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-}
-
-.caption h3{
-    margin-left: 100px;
-    color: var(--secondary-color);
-    animation-name: animation;
-    animation-duration: 3.5s;
-}
-
-
-.caption .container{
-    height: fit-content;
-    width: fit-content;
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    margin-left: 100px;
-   
-
-}
-
-.caption .container{
-    width: 20vw;
-    height: 50px;
-    color: var(--secondary-color);
-}
-.caption .box{
-    background-color: var(--secondary-color);
-    width: 65px;
-    height: 50px;
+.projects{
     display: flex;
     justify-content: center;
-    align-items: center;
-    border-radius: 10px;
-    animation-name: animation;
-    animation-duration: 3.5s;
-
-}
-
-.caption p{
-    font-weight: lighter;
-    animation-name: animation;
-    animation-duration: 3.5s;
-}
-
-.caption i{
-    font-size: 30px;
-    color: var(--primary-color);
-    animation-name: animation;
-    animation-duration: 3.5s;
-}
-
-.image{
-    width: 40vw;
-    height: 50vh;
-    background-image: url(contact\ image.png);
-    background-size: cover;
-    animation-name: animation;
-    animation-duration: 3.5s;
-}
-
-@keyframes animation {
-    from{opacity: 0;}
-    to{opacity: 100;}
+    gap: 50px;
+    flex-wrap: wrap;
+    padding-top: 50px;
     
 }
+.projects h2{
+    color: var(--secondary-color);
+    position: absolute;
+    left: 10px;
+}
+.projects .project1{
+    height: 250px;
+    width: 400px;
+    border: 2px solid rgb(44, 48, 62);
+    border-radius: 15px;
+    animation-name: animation;
+    animation-duration: 1s;
+    background-image: url(images/image1.png);
+    background-size: 400px;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+    cursor: pointer;
+
+
+    
+}
+
+.projects .project2{
+    height: 250px;
+    width: 400px;
+   border: 2px solid rgb(44, 48, 62);
+    border-radius: 15px;
+    animation-name: animation;
+    animation-duration: 1.5s;
+    background-image: url(images/image2.png);
+    background-size: 400px;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+    cursor: pointer;
+}
+
+.projects .project3{
+    height: 250px;
+    width: 400px;
+   border: 2px solid rgb(44, 48, 62);
+    border-radius: 15px;
+    animation-name: animation;
+    animation-duration: 2.5s;
+    background-image: url(images/image3.png);
+    background-size: 400px;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+    cursor: pointer;
+}
+
+.projects .project4{
+    height: 250px;
+    width: 400px;
+   border: 2px solid rgb(44, 48, 62);
+    border-radius: 15px;
+    animation-name: animation;
+    animation-duration: 3.5s;
+    background-image: url(images/image4.png);
+    background-size: 400px;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+    cursor: pointer;
+}
+
+.projects .project5{
+    height: 250px;
+    width: 400px;
+    border: 2px solid rgb(44, 48, 62);
+    border-radius: 15px;
+    animation-name: animation;
+    animation-duration: 4.5s;
+    background-image: url(images/image5.png);
+    background-size: 330px;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+    cursor: pointer;
+}
+
+
+ @keyframes animation {
+    from{opacity: 0;
+        }
+         
+    to{
+       opacity: 100;
+    }
+ }
+
+
+
 
 @media (max-width:870px) {
     nav .elements a{
         display: none;
     }
-    .mode #sun{
-        display: block;
-    }
 
     .mode #bar {
         display: block;
     }
-    .content{
-        flex-direction: column;
-    }
-
-    .caption .container{
-        margin-left: -100px;
-       
-    }
-
-    .image{
-        width: 100vw;
-        height: 50vh;
-        background-image: url(contact\ image.png);
-        background-size: 100vw;
-        background-repeat: no-repeat;
-        background-position: center
-    }
-
-    .caption h3{
-        margin-left: 0px;
-        color: var(--secondary-color);
-        margin-top: 100px;
-    }
-
-    .caption .box{
-        background-color: var(--secondary-color);
-        padding: 10px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        border-radius: 10px;
-    
-    }
-
-    .content{
-        gap:5vw;
-        
-    }
-};
+}

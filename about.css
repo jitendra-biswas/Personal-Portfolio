@@ -220,6 +220,8 @@ section .content{
     font-size: 50px;
     font-family: Arial, Helvetica, sans-serif;
     color: var(--secondary-color);
+    animation-name: animation;
+    animation-duration: 2.5s;
 }
 
 .content2{
@@ -229,7 +231,16 @@ section .content{
     color: var(--secondary-color);
     background-color: var(--primary-color);
     border-radius: 15px;
+   
 
+}
+
+@keyframes animation{
+    from{
+        opacity: 0;
+    }
+    to{opacity: 100;}
+    
 }
 
 .content2 h1{
@@ -237,6 +248,8 @@ section .content{
     font-size: 25px;
     margin-left: 30px;
     padding-top: 50px;
+    animation-name: animation;
+    animation-duration: 3s;
 }
 
 .content2 p{
