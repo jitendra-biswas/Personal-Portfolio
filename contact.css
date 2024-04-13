@@ -11,11 +11,14 @@
 .white-theme{
     --primary-color: white;
     --secondary-color: black;
+    --i-color: white;
 }
 
 :root{
-    --primary-color: black;
+    --primary-color:background: rgb(16,16,16);
+    background: linear-gradient(90deg, rgba(16,16,16,1) 0%, rgb(31, 31, 31) 47%, rgb(31, 31, 31) 70%, rgba(9,9,9,1) 100%);
     --secondary-color: white;
+    --i-color: black;
 }
 
 body{
@@ -221,9 +224,9 @@ nav .sidenav .elements a:hover{
     animation-duration: 3.5s;
 }
 
-.caption i{
+.caption .box i{
     font-size: 30px;
-    color: var(--primary-color);
+    color: var(--i-color);
     animation-name: animation;
     animation-duration: 3.5s;
 }
