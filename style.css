@@ -5,8 +5,8 @@
     font-family:Arial, Helvetica, sans-serif;
     overflow: hidden;
     
+    
 }
-
 
 .white-theme{
     --primary-color: white;
@@ -14,7 +14,7 @@
 }
 
 :root{
-    --primary-color:background: rgb(16,16,16);
+    --primary-color:background-color: rgb(16,16,16);
     background: linear-gradient(90deg, rgba(16,16,16,1) 0%, rgb(31, 31, 31) 47%, rgb(31, 31, 31) 70%, rgba(9,9,9,1) 100%);;
     --secondary-color: white;
 }

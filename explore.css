@@ -68,10 +68,6 @@ nav .elements li a{
      color: var(--secondary-color);
 }
 
-nav .elements li #about{
-    color: #f63f48;
-}
-
 nav .elements li a:hover{
     cursor: pointer;
     color: #f63f48;
@@ -179,95 +175,64 @@ nav .sidenav .elements a:hover{
     display: none;
 }
 
-.projects{
+.projects #head{
+    color: var(--secondary-color);
+    padding-top: 50px;
+    margin-left: 7vw;
+    font-size: 30px;
     display: flex;
-    justify-content: center;
+    gap: 5px;
+    
+}
+
+.projects #head i{
+    color: green;
+}
+
+.apps{
+    display: flex;
     gap: 50px;
     flex-wrap: wrap;
     padding-top: 50px;
+    margin-left: 7vw;
     
 }
-.projects h2{
-    color: var(--secondary-color);
-    position: absolute;
-    left: 10px;
-}
+
 .projects .project1{
-    height: 250px;
-    width: 400px;
+    height: 150px;
+    width: 150px;
     border: 2px solid rgb(44, 48, 62);
     border-radius: 15px;
     animation-name: animation;
     animation-duration: 1s;
-    background-image: url(images/image1.png);
-    background-size: 400px;
+    background-image: url(https://cdn-icons-png.flaticon.com/512/2076/2076261.png);
+    background-size: 150px;
     background-repeat: no-repeat;
     background-position: center;
     position: relative;
     cursor: pointer;
-
-
     
 }
 
 .projects .project2{
-    height: 250px;
-    width: 400px;
-   border: 2px solid rgb(44, 48, 62);
-    border-radius: 15px;
-    animation-name: animation;
-    animation-duration: 1.5s;
-    background-image: url(images/image2.png);
-    background-size: 400px;
-    background-repeat: no-repeat;
-    background-position: center;
-    position: relative;
-    cursor: pointer;
-}
-
-.projects .project3{
-    height: 250px;
-    width: 400px;
-   border: 2px solid rgb(44, 48, 62);
-    border-radius: 15px;
-    animation-name: animation;
-    animation-duration: 2.5s;
-    background-image: url(images/image3.png);
-    background-size: 400px;
-    background-repeat: no-repeat;
-    background-position: center;
-    position: relative;
-    cursor: pointer;
-}
-
-.projects .project4{
-    height: 250px;
-    width: 400px;
-   border: 2px solid rgb(44, 48, 62);
-    border-radius: 15px;
-    animation-name: animation;
-    animation-duration: 3.5s;
-    background-image: url(images/image4.png);
-    background-size: 400px;
-    background-repeat: no-repeat;
-    background-position: center;
-    position: relative;
-    cursor: pointer;
-}
-
-.projects .project5{
-    height: 250px;
-    width: 400px;
+    height: 150px;
+    width: 150px;
     border: 2px solid rgb(44, 48, 62);
     border-radius: 15px;
     animation-name: animation;
-    animation-duration: 4.5s;
-    background-image: url(images/image5.png);
-    background-size: 330px;
+    animation-duration: 1s;
+    background-image: url(https://www.qrstuff.com/images/default_qrcode.png);
+    background-size: 150px;
     background-repeat: no-repeat;
     background-position: center;
     position: relative;
     cursor: pointer;
+    
+}
+
+.projects .project-container p{
+    color: var(--secondary-color);
+    padding-top: 5px;
 }
 
 
@@ -284,6 +249,9 @@ nav .sidenav .elements a:hover{
 
 
 @media (max-width:870px) {
+    *{
+        scroll-behavior: 0px;
+    }
     nav .elements a{
         display: none;
     }
