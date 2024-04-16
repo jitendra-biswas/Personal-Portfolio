@@ -249,9 +249,6 @@ nav .sidenav .elements a:hover{
 
 
 @media (max-width:870px) {
-    *{
-        scroll-behavior: 0px;
-    }
     nav .elements a{
         display: none;
     }
@@ -261,7 +258,7 @@ nav .sidenav .elements a:hover{
     }
 
     .main{
-       height: fit-content;
-       padding-bottom: 50px;
+       height: 100vh;
+       background-color: var(--primary-color);
     }
 }

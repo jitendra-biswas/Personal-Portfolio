@@ -19,8 +19,8 @@
     --secondary-color: white;
 }
 
-body{
-    background-color: var(--primary-color);
+section{
+    height: calc(100vh - 70px);
 }
 
 nav{
@@ -262,7 +262,7 @@ section .content{
 }
 
 .icon{
-    height:fit-content;
+    height:calc(100vh - 470px);
     width: fit-content;
     background-color: var(--primary-color);
     font-size: 35px;
@@ -352,6 +352,7 @@ section .content{
     }
 
     .icon{
+        height: calc(100vh - 580px);
         margin-left: -100px;
         margin-top: -30px;
        
