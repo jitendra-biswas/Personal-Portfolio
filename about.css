@@ -36,16 +36,21 @@ nav{
 nav h2{
     background-color: transparent;
     color: var(--secondary-color);
+    
 }
 
 nav h2 a{
+    font-size: 20px;
     color: var(--secondary-color);
     cursor: pointer;
     text-decoration: none;
+    font-family: Papyrus, fantasy;
+    
 }
 
 nav h2 span{
-       color: rgb(229, 5, 5);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #f63f48;
 }
 
 nav .elements{

@@ -25,12 +25,16 @@ nav{
 nav h2{
     background-color: transparent;
     color: var(--secondary-color);
+    
 }
 
 nav h2 a{
+    font-size: 20px;
     color: var(--secondary-color);
     cursor: pointer;
     text-decoration: none;
+    font-family: Papyrus, fantasy;
+    
 }
 
 nav h2 span{
@@ -69,11 +73,16 @@ nav .elements li a:hover{
     align-items: center;
 }
 
+.mode #no{
+    display: none;
+}
+
 .mode i{
     font-size: 25px;
     background-color: transparent;
      color: var(--secondary-color);
      cursor: pointer;
+     display: none;
 }
 
 .mode button a{
