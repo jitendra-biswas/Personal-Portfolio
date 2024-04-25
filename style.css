@@ -4,8 +4,6 @@
     box-sizing: border-box;
     font-family:Arial, Helvetica, sans-serif;
     overflow: hidden;
-    
-    
 }
 
 .white-theme{
@@ -26,7 +24,14 @@ nav{
     justify-content: space-between;
     padding: 0px 35px;
    background-color: var(--primary-color);
-   
+   animation-name: nav;
+   animation-duration: 4s;
+   transition: all ease-in;
+}
+
+@keyframes nav {
+    from{opacity: 0;}
+    to{opacity: 100;}
 }
 
 .logo-container{
@@ -192,7 +197,6 @@ flex-direction: column;
 justify-content: center;
 padding-left: 13%;
 
-
 }
 
 .content1 h1{
@@ -230,7 +234,10 @@ padding-left: 13%;
 .content1 .button{
     display: flex;
     gap: 5vw;
+    height: fit-content;
+    margin-top: 5vh;
 }
+
 
 .content1 .button #btn a{
     color: var(--secondary-color);
@@ -241,11 +248,14 @@ padding-left: 13%;
     display: none;
 }
 
-.content1 button{
+.content1 .button button{
     width: fit-content;
+    height: 4.5vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background-color: transparent;
-    margin-top: 5vh;
-    padding: 7px 17px;
+    padding: 0px 8px;
     font-size: 15px;
     border-radius: 7px;
     outline: none;
@@ -288,19 +298,20 @@ padding-left: 13%;
 main{
     display: flex;
    background-color: var(--primary-color);
+   
 }
 
 
 .profile{
     width: 45%;
     height: 95%;
- 
+   
 }
 
 .profile img{
     position: absolute;
     top: 58%;
-    left: 80%;
+    left: 78%;
     transform: translate(-50% , -50%);
     animation-name: img;
     animation-duration: 2s;
@@ -320,6 +331,7 @@ main{
 
 .profile #anish{
     width: 400px;
+    filter: contrast(1.2);
 }
 
   
@@ -411,15 +423,17 @@ main{
     
     }
 
+
     .content1 .button #sign-in-btn{
         display: block;
-        padding: 0px 30px;
-        
+   
+    
     }
 
     .content1 .button #sign-in-btn a{
         text-decoration: none;
         color: var(--secondary-color);
+       
     }
 
     
@@ -433,6 +447,7 @@ main{
 
     .button #sign-in-btn{
         color: var(--primary-color);
+       
     }
 
     @keyframes p {
