@@ -12,3 +12,13 @@ login.addEventListener("click", function(){
     signup.style.display = "none"
     signin.style.display = "block"
 });
+
+signin.addEventListener("submit", function(){
+    var formData = new FormData();
+    alert("submission successful")
+});
+
+signup.addEventListener("submit", function(){
+    var formData = new FormData();
+    alert("SignUp successful")
+})
