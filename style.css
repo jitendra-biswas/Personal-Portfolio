@@ -434,7 +434,7 @@ main{
 
     .content1 .button #sign-in-btn a{
         text-decoration: none;
-        color: var(--secondary-color);
+        color: var(--primary-color);
        
     }
 
