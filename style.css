@@ -249,7 +249,7 @@ padding-left: 13%;
 }
 
 .content1 .button #btn a:hover{
-    color:var(--button-color)
+    color:var(--button-color);
     text-decoration: none;
 }
 
