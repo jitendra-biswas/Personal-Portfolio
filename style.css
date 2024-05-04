@@ -9,12 +9,16 @@
 .white-theme{
     --primary-color: white;
     --secondary-color: rgb(44, 44, 44);
+    --button-color: #f63f48;
+   
 }
 
 :root{
     --primary-color:background-color: rgb(16,16,16);
     background: linear-gradient(90deg, rgba(16,16,16,1) 0%, rgb(31, 31, 31) 47%, rgb(31, 31, 31) 70%, rgba(9,9,9,1) 100%);;
     --secondary-color: white;
+    --button-color: #f63f48;
+   
 }
 
 nav{
@@ -233,9 +237,9 @@ padding-left: 13%;
 }
 .content1 .button{
     display: flex;
-    gap: 5vw;
+    gap: 3vw;
     height: fit-content;
-    margin-top: 5vh;
+    margin-top: 7vh;
 }
 
 
@@ -245,7 +249,7 @@ padding-left: 13%;
 }
 
 .content1 .button #btn a:hover{
-    color: var(--secondary-color);
+    color:var(--button-color)
     text-decoration: none;
 }
 
@@ -253,25 +257,38 @@ padding-left: 13%;
     display: none;
 }
 
+.content1 .button #resume a{
+  text-decoration: none;
+  color: var(--primary-color);
+}
+
+.content1 .button #resume:hover{
+    color: var(--button-color);
+}
+
+.content1 .button #resume a:hover{
+    color: var(--button-color);
+}
+
 .content1 .button button{
-    width: fit-content;
-    height: 4.5vh;
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 0px 8px;
-    font-size: 15px;
-    border-radius: 7px;
+    padding: 9px 15px;
+    font-size: 18px;
+    border-radius: 15px;
     outline: none;
     background-color: var(--secondary-color);
     font-weight: bold;
+   
+  
 }
 
 .content1 button:hover{
     cursor: pointer;
     background-color: transparent;
-  
     transition: background-color 0.2s ;
+    color: var(--button-color)
 }
 
 .content1 .icons{
@@ -425,11 +442,12 @@ main{
     
     }
 
+    .content1 .button #resume{
+        display: none;
+    }
 
     .content1 .button #sign-in-btn{
         display: block;
-   
-    
     }
 
     .content1 .button #sign-in-btn a{
