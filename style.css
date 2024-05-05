@@ -6,6 +6,12 @@
     overflow: hidden;
 }
 
+@font-face{
+    font-family:"Papyrus";
+    src: url('papyrus.ttf'),
+    url('papyrus.eot'); /* IE */
+}
+
 .white-theme{
     --primary-color: white;
     --secondary-color: rgb(44, 44, 44);
