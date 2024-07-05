@@ -2,27 +2,23 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    scrollbar-width: 0px;
-    
+    font-family:Arial, Helvetica, sans-serif;
+    overflow: hidden;
 }
-
 
 .white-theme{
     --primary-color: white;
-    --secondary-color: black;
+    --secondary-color: rgb(44, 44, 44);
+    --button-color: #f63f48;
+   
 }
 
 :root{
-    --primary-color:background: rgb(16,16,16);
+    --primary-color:background-color: rgb(16,16,16);
     background: linear-gradient(90deg, rgba(16,16,16,1) 0%, rgb(31, 31, 31) 47%, rgb(31, 31, 31) 70%, rgba(9,9,9,1) 100%);;
     --secondary-color: white;
-}
-
-.main{
-    width: 100vw;
-    height: 100vh;
-    background-color: var(--primary-color);
+    --button-color: #f63f48;
+   
 }
 
 nav{
@@ -31,23 +27,42 @@ nav{
     align-items: center;
     justify-content: space-between;
     padding: 0px 35px;
-   border-bottom: 2px solid rgb(24, 24, 24);
    background-color: var(--primary-color);
+   animation-name: nav;
+   animation-duration: 4s;
+   transition: all ease-in;
+}
+
+@keyframes nav {
+    from{opacity: 0;}
+    to{opacity: 100;}
+}
+
+.logo-container{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    overflow: visible;
 }
 
 nav h2{
     background-color: transparent;
     color: var(--secondary-color);
+    
 }
 
 nav h2 a{
+    font-size: 20px;
     color: var(--secondary-color);
     cursor: pointer;
     text-decoration: none;
+    font-family: Papyrus;
+    
 }
 
 nav h2 span{
-       color: rgb(229, 5, 5);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #f63f48;
 }
 
 nav .elements{
@@ -68,6 +83,11 @@ nav .elements li a{
      color: var(--secondary-color);
 }
 
+
+nav .elements li #home{
+    color: #f63f48;
+}
+
 nav .elements li a:hover{
     cursor: pointer;
     color: #f63f48;
@@ -78,7 +98,6 @@ nav .elements li a:hover{
 .mode{
     display: flex;
     align-items: center;
-    gap: 10px;
 }
 
 .mode i{
@@ -91,7 +110,7 @@ nav .elements li a:hover{
 .mode button a{
     text-decoration: none;;
     font-size: 17px;
-    color: var(--primary-color);
+    color: black;
     font-weight: bold;
 
 }
@@ -106,7 +125,6 @@ nav .elements li a:hover{
     border-radius: 25px;
     outline: none;
     border: none;
-    display: none;
     
 }
 
@@ -114,7 +132,6 @@ nav .elements li a:hover{
     background-color: rgb(198, 39, 25);
     transition: 0.2s ;
 }
-
 .mode #sun:hover{
     transform: rotate(90deg);
     transition: transform 1s;
@@ -174,6 +191,7 @@ nav .sidenav .elements a:hover{
 .nav .sidenav{
     display: none;
 }
+
 
 .projects #head{
     color: var(--secondary-color);

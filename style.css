@@ -210,6 +210,9 @@ padding-left: 13%;
     animation-name: h1;
     animation-duration: 2.5s;
      color: var(--secondary-color);
+     -webkit-text-stroke-width: 2px;
+     -webkit-text-stroke-color: black;
+     text-shadow: 2px 2px 8px rgb(231, 56, 56);
 
 }
 
@@ -302,6 +305,7 @@ padding-left: 13%;
     font-size: 25px;
     background-color: transparent;
      color: var(--secondary-color);
+   
 }
 
 .content1 .icons a{
@@ -312,6 +316,7 @@ padding-left: 13%;
     cursor: pointer;
     color: #f63f48;
     transition: background-color 0.2s ;
+    filter: drop-shadow(2px 2px 8px red);
 }
 
 main{
@@ -343,7 +348,7 @@ main{
 }
 .profile #back{
     width: 500px;
-    
+    filter: drop-shadow(2px 2px 8px black);
     
 }
 
@@ -351,6 +356,7 @@ main{
 .profile #anish{
     width: 400px;
     filter: contrast(1.2);
+    
 }
 
   
