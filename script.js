@@ -32,7 +32,50 @@ bar.addEventListener("click",function(){
     }
 });
 
+gsap.from(".content1 h1",{
+    y:30,
+    duration: 1,
+    delay: 0.5,
+    opacity:0
+}) 
 
+gsap.from(".content1 p",{
+    y:30,
+    duration: 1,
+    delay:1,
+    opacity:0
+})
+
+gsap.from(".content1 .button #btn",{
+    y:30,
+    duration: 0.5,
+    delay: 1.5,
+    rotate:20,
+    opacity:0
+})
+
+gsap.from(".content1 .button #resume",{
+    y:30,
+    duration: 0.5,
+    delay: 2,
+    rotate:20,
+    opacity:0
+})
+
+gsap.from(".content1 .button #sign-in-btn",{
+    y:30,
+    duration: 0.5,
+    delay: 2,
+    rotate:20,
+    opacity:0
+})
+
+gsap.from(".content1 .icons a i",{
+    opacity: 0,
+    duration: 1,
+    delay: 2.5,
+    stagger:0.4
+})
 
  
 

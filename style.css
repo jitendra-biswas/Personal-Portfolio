@@ -207,15 +207,8 @@ padding-left: 13%;
     width: fit-content;
     background-color: transparent;
     font-size: 60px;
-    animation-name: h1;
-    animation-duration: 2.5s;
      color: var(--secondary-color);
 
-}
-
-@keyframes h1 {
-    from{margin-left: -100px;}
-    to{margin-left: 0px;}
 }
 
 .content1 h1 span{
@@ -226,22 +219,15 @@ padding-left: 13%;
     background-color: transparent;
     font-size: 17px;
     margin-top: 3vh;
-    animation-name: p;
-    animation-duration: 2s;
      color: var(--secondary-color);
 }
 
-@keyframes p {
-    from{margin-top: -100px;}
-    to{margin-top:20px;}
-}
 .content1 .button{
     display: flex;
     gap: 3vw;
     height: fit-content;
     margin-top: 7vh;
 }
-
 
 .content1 .button #btn a{
     color: var(--primary-color);
