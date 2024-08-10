@@ -72,7 +72,7 @@ gsap.from(".content1 .button #sign-in-btn",{
 
 gsap.from(".content1 .icons a i",{
     opacity: 0,
-    duration: 1,
+    duration: 0.8,
     delay: 2.5,
     stagger:0.4
 })

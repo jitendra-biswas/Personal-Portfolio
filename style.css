@@ -321,12 +321,16 @@ main{
     left: 78%;
     transform: translate(-50% , -50%);
     animation-name: img;
-    animation-duration: 2s;
+    animation-duration: 3s;
 }
 
 @keyframes img {
-    from{margin-left: 100px;}
-    to{margin-left: 0px;}
+    from{
+        margin-left: 200px;
+    }
+    to{
+        margin-left: 0px;
+    }
     
 }
 .profile #back{
