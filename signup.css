@@ -182,7 +182,19 @@ nav .sidenav .elements a:hover{
     padding: 10px 35px;
     color: var(--secondary-color);
     background-color: var(--primary-color);
+    animation-name: animation;
+    animation-duration: 2s;
 
+}
+
+@keyframes animation {
+    from{
+        opacity: 0;
+    }
+
+    to{
+        opacity: 100;
+    }
 }
 
 .form1 h1{
@@ -267,6 +279,19 @@ nav .sidenav .elements a:hover{
     background-color: var(--primary-color);
     color: var(--primary-color);
     display: none;
+    animation-name: animation2;
+    animation-duration: 2s;
+
+}
+
+@keyframes animation2 {
+    from{
+        opacity: 0;
+    }
+
+    to{
+        opacity: 100;
+    }
 }
 
 .form h1{
