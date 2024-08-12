@@ -295,7 +295,7 @@ padding-left: 13%;
     text-decoration: none;
 }
 
-.content1 .icons i:hover{
+.content1 .icons a i:hover{
     cursor: pointer;
     color: #f63f48;
     transition: background-color 0.2s ;
@@ -308,7 +308,6 @@ main{
    
 }
 
-
 .profile{
     width: 45%;
     height: 95%;
@@ -320,19 +319,8 @@ main{
     top: 58%;
     left: 78%;
     transform: translate(-50% , -50%);
-    animation-name: img;
-    animation-duration: 3s;
 }
 
-@keyframes img {
-    from{
-        margin-left: 200px;
-    }
-    to{
-        margin-left: 0px;
-    }
-    
-}
 .profile #back{
     width: 500px;
     filter: drop-shadow(2px 2px 8px black);

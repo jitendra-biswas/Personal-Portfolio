@@ -34,49 +34,58 @@ bar.addEventListener("click",function(){
 
 gsap.from(".content1 h1",{
     y:30,
-    duration: 1,
-    delay: 0.5,
+    duration: 0.7,
+    delay: 1,
+    scale:2,
     opacity:0
 }) 
 
 gsap.from(".content1 p",{
     y:30,
     duration: 1,
-    delay:1,
+    delay:1.5,
     opacity:0
 })
 
 gsap.from(".content1 .button #btn",{
-    y:30,
+    x:-30,
     duration: 0.5,
-    delay: 1.5,
-    rotate:20,
+    delay: 2,
     opacity:0
 })
 
 gsap.from(".content1 .button #resume",{
-    y:30,
-    duration: 0.5,
-    delay: 2,
-    rotate:20,
+    duration: 0.7,
+    delay: 2.5,
+    x:-30,
     opacity:0
 })
 
 gsap.from(".content1 .button #sign-in-btn",{
-    y:30,
-    duration: 0.5,
-    delay: 2,
-    rotate:20,
+    duration: 0.7,
+    delay: 2.5,
+    x:-30,
     opacity:0
 })
 
 gsap.from(".content1 .icons a i",{
     opacity: 0,
-    duration: 0.8,
-    delay: 2.5,
-    stagger:0.4
+    duration: 0.5,
+    delay: 2.8,
+    stagger:0.3
 })
 
+gsap.from(".profile img",{
+    opacity:0,
+    left:100,
+    duration:1.5,
+})
+
+gsap.from(".responsive",{
+    opacity:0,
+    y:100,
+    duration:1.3,
+})
  
 
 
