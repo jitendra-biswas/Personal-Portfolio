@@ -2,307 +2,290 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    scrollbar-width: 0;
-    
+    text-decoration: none;
+    color: white;
+    font-family:Arial, Helvetica, sans-serif;
 }
 
-
-.white-theme{
-    --primary-color: white;
-    --secondary-color: black;
-    --i-color: white;
+html,body{
+    overflow-x: hidden;
 }
 
-:root{
-    --primary-color:background: rgb(16,16,16);
-    background: linear-gradient(90deg, rgba(16,16,16,1) 0%, rgb(31, 31, 31) 47%, rgb(31, 31, 31) 70%, rgba(9,9,9,1) 100%);
-    --secondary-color: white;
-    --i-color: black;
-}
-
-body{
-    background-color: var(--primary-color);
+body::-webkit-scrollbar{
+    width: 0;
 }
 
 nav{
+    width: 100vw;
     height: 70px;
+    background: linear-gradient(90deg, rgba(16,16,16,1) 0%, rgb(31, 31, 31) 47%, rgb(31, 31, 31) 70%, rgba(9,9,9,1) 100%);;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0px 35px;
-   border-bottom: 2px solid rgb(24, 24, 24);
-   background-color: var(--primary-color);
+    padding:0px 50px;
+
 }
 
-.logo-container{
+nav a{
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.logo a{
     display: flex;
     align-items: center;
 }
 
-.logo-container img{
+.logo img{
     width: 30px;
 }
 
-nav h2{
-    background-color: transparent;
-    color: var(--secondary-color);
-    
-}
-
-nav h2 a{
+.logo h2{
+    font-family: cursive;
+    color: red;
     font-size: 20px;
-    color: var(--secondary-color);
-    cursor: pointer;
-    text-decoration: none;
-    font-family:cursive;
-    color: #f63f48;
-    
 }
 
-nav .elements{
+ul{
     display: flex;
     align-items: center;
-    gap: 30px;
-    background-color: transparent;
+    gap: 20px;
 }
 
-nav .elements li{
-    list-style: none;
+ul a li{
+   list-style: none;
+   font-size: 20px;
+   font-weight: lighter;
+  
 }
 
-nav .elements li a{
-    text-decoration: none;
-    font-size: 20px;
-    background-color: transparent;
-     color: var(--secondary-color);
+
+ul a li:hover{
+    color:#f63f48;
+    transition: 0.2s ease-in;
 }
 
-nav .elements li #contact{
+#contact{
     color: #f63f48;
 }
 
-nav .elements li a:hover{
-    cursor: pointer;
-    color: #f63f48;
-    transition: background-color 0.2s ;
-}
 
-
-.mode{
-    display: flex;
-    align-items: center;
-    gap: 10px;
-}
-
-.mode i{
-    font-size: 25px;
-    background-color: transparent;
-     color: var(--secondary-color);
-     cursor: pointer;
-}
-
-.mode button a{
-    text-decoration: none;;
-    font-size: 17px;
-    color: var(--primary-color);
-    font-weight: bold;
-
-}
-
-.mode #moon:hover{
-    transition: 0.2s;
-}
-
-.mode button{
-    padding: 5px 10px;
-    margin-right: 10px;
-    border-radius: 25px;
+.join button{
+    background-color: white;
+    padding: 8px 17px;
     outline: none;
     border: none;
-    display: none;
-    
+    border-radius: 25px;
+
 }
 
-.mode button:hover{
-    background-color: rgb(198, 39, 25);
-    transition: 0.2s ;
-}
-
-.mode #sun:hover{
-    transform: rotate(90deg);
-    transition: transform 1s;
-}
-
-.mode #moon{
-    display: none;
-}
-
-.mode #bar{
-    display: none;
-}
-
-nav .sidenav{
-    position: absolute;
-    width: 35%;
-    height: 35%;
-    background-color: rgba(1, 1, 1, 0.258);
-    top: 75px;
-    left: 65%;
-    border-radius: 10px;
-    backdrop-filter: blur(5px);
-    padding: 10px 20px;
-    display: none;
-}
-
-nav .sidenav .elements{
-    display: flex;
-    flex-direction: column;
-}
-
-nav .sidenav .elements a{
-    display: flex;
-    color: var(--secondary-color);
-    
-}
-
-nav .sidenav .elements a:hover{
+.join button:hover{
     cursor: pointer;
-    color: #f63f48;
+    background-color:#f63f48;
+    color: black;
+    transition: 0.2s ease-in;
 }
 
+.join button a{
+    font-size: 17px;
+    font-weight: bold;
+    color: black;
+}
 
-.nav .sidenav{
+.join button a i{
+    color: black;
+}
+
+.bar{
     display: none;
 }
 
-.content{
+.page1{
     width: 100vw;
     height: calc(100vh - 70px);
     display: flex;
-    align-items: center;
-    gap:20vw;
-    background-color: var(--primary-color);
+    background: linear-gradient(90deg, rgba(16,16,16,1) 0%, rgb(31, 31, 31) 47%, rgb(31, 31, 31) 70%, rgba(9,9,9,1) 100%);
+    overflow: hidden;
 }
 
-.caption{
+.part1{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 200px;
+}
+
+.contact-icon{
     display: flex;
     flex-direction: column;
     gap: 20px;
 }
 
-.caption h3{
-    margin-left: 100px;
-    color: var(--secondary-color);
-    animation-name: animation;
-    animation-duration: 3.5s;
+.page1{
+    padding-top: -100px;
 }
-
-
-.caption .container{
-    height: fit-content;
-    width: fit-content;
+.page1 .contact-icon a i{
+    width: 80px;
+    height: 60x;
+    color:black;
+    font-size: 35px;
+    background-color: #fff;
     display: flex;
     align-items: center;
-    gap: 10px;
-    margin-left: 100px;
-   
-
+    justify-content: center;
+    padding: 5px;
+    border-radius: 10px;
 }
 
-.caption .container{
-    width: 20vw;
-    height: 50px;
-    color: var(--secondary-color);
+.gmail{
+    width: fit-content;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    gap: 20px;
 }
-.caption .box{
-    background-color: var(--secondary-color);
-    width: 65px;
-    height: 50px;
+
+.gamil-info{
     display: flex;
     justify-content: center;
+    flex-direction: column;
+}
+
+.gamil-info #child2{
+    color: rgb(213, 213, 213);
+}
+
+.contact{
+    width: fit-content;
+    height: 10vh;
+    display: flex;
     align-items: center;
-    border-radius: 10px;
-    animation-name: animation;
-    animation-duration: 3.5s;
-
+    gap: 20px;
 }
 
-.caption p{
-    font-weight: lighter;
-    animation-name: animation;
-    animation-duration: 3.5s;
+.contact-info{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
 }
 
-.caption .box i{
-    font-size: 30px;
-    color: var(--i-color);
-    animation-name: animation;
-    animation-duration: 3.5s;
+.facebook{
+    width: fit-content;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    gap: 20px;
 }
 
-.image{
-    width: 40vw;
-    height: 50vh;
-    background-image: url(contact\ image.png);
-    background-size: cover;
-    animation-name: animation;
-    animation-duration: 3.5s;
+.facebook-info{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
 }
 
-@keyframes animation {
-    from{opacity: 0;}
-    to{opacity: 100;}
+.part2{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
     
 }
 
-@media (max-width:870px) {
-    nav .elements a{
+.part2 img{
+   width: 50vw;
+}
+
+.sidenav{
+    display: none;
+}
+
+@media (max-width:800px) {
+    .page1{
+        flex-direction: column-reverse;
+    }
+
+    .part1 h1{
+        padding-left: 10px;
+    }
+
+    .contact-icon{
+        width: 100vw;
+        padding-left: 20px;
+        gap:5px;
+    }
+
+    .page1 .part1{
+        width: 100vw;
+        padding-left: 0px;
+    }
+
+    .page1 .part2{
+        width: 100vw;
+        justify-content: center;
+    }
+
+    .part2 img{
+        width: 100vw;
+    }
+
+    nav ul{
         display: none;
     }
-    .mode #sun{
+
+    .bar{
         display: block;
     }
 
-    .mode #bar {
+    .bar i{
+        font-size: 23px;
+    }
+
+    .join{
+        display: none;
+    }
+
+    .main{
+        position: relative;
+    }
+
+    .sidenav{
         display: block;
-    }
-    .content{
-        flex-direction: column;
-    }
-
-    .caption .container{
-        margin-left: -100px;
-       
-    }
-
-    .image{
         width: 100vw;
-        height: 50vh;
-        background-image: url(contact\ image.png);
-        background-size: 100vw;
-        background-repeat: no-repeat;
-        background-position: center
+        height: 100vh;
+        position: absolute;
+        background-color: rgba(0, 0, 0, 0.208);
+        top: 0;
+        backdrop-filter: blur(10px);
+        right: -100vw;
     }
-
-    .caption h3{
-        margin-left: 0px;
-        color: var(--secondary-color);
-        margin-top: 100px;
-    }
-
-    .caption .box{
-        background-color: var(--secondary-color);
-        padding: 10px;
+     
+    .sidenav ul{
         display: flex;
-        justify-content: center;
-        align-items: center;
-        border-radius: 10px;
-    
-    }
-
-    .content{
-        gap:5vw;
+        flex-direction: column;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%,-50%);
+        gap: 30px;
         
     }
-};
+
+    ul a li{
+        font-size: 25px;
+        color: rgb(184, 184, 184);
+        font-weight: bold;
+    }
+
+    .sidenav i{
+        background-color: black;
+        color: white;
+        padding: 5px;
+        border-radius: 50%;
+        position: absolute;
+        top: 3%;
+        right: 5%;
+        font-size: 30px;
+    }
+}

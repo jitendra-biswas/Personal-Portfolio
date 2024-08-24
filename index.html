@@ -1,81 +1,128 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>WebX</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
     <link
-    href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
-    rel="stylesheet"
-/>
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
 
-</head>
-<body>
-    <header>
+    <link
+      rel="icon"
+      href="image/png-transparent-red-hot-chilli-logo-thumbnail-fotor-bg-remover-20240818162639.png"
+    />
+  </head>
+  <body>
+    <div class="main">
+      <header>
         <nav>
-            <div class="logo-container">
-                <img src="images/png-transparent-red-hot-chilli-logo-thumbnail-fotor-bg-remover-20240818162639.png" alt="">
-                <h2><a href="index.html">WebX</a></h2>
-            </div>
-            <div class="elements">
+          <div class="logo">
+            <a href="#">
+              <img
+                src="image/png-transparent-red-hot-chilli-logo-thumbnail-fotor-bg-remover-20240818162639.png"
+                alt=""
+              />
+              <h2>WebX</h2>
+            </a>
+          </div>
+          <ul>
+            <a href="index.html">
+              <li id="home">Home</li>
+            </a>
+            <a href="about.html">
+              <li>About</li>
+            </a>
+            <a href="contact.html">
+              <li>Contact</li>
+            </a>
+            <a href="">
+              <li>Services</li>
+            </a>
+            <a href="">
+              <li>Hire Me</li>
+            </a>
+          </ul>
 
-                    <li><a href="index.html" id="home">Home</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                    <li><a href="#">Services</a></li>
-                    <li><a href="#">Hire Me</a></li>
+          <div class="join">
+            <button>
+              <a href="signup.html"
+                >Join Us <i class="ri-arrow-right-line"></i
+              ></a>
+            </button>
+          </div>
 
-            </div>
-
-            <div class="mode">
-                <button><a href="signup.html" id="no">Signin</a></button>
-                <i class="ri-sun-fill" id="sun"></i>
-                <i class="ri-moon-fill" id="moon"></i>
-                <i class="ri-bar-chart-horizontal-line" id="bar"></i>
-            </div>
-
-
-            <div class="sidenav">
-                <div class="elements">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                    <li><a href="#">Services</a></li>
-                    <li><a href="#">Hire Me</a></li>
-                </div>
-            </div>
+          <div class="bar"><i class="ri-bar-chart-horizontal-line"></i></div>
         </nav>
-    </header>
+      </header>
 
-<main>
-    <div class="content1">
-        <div class="responsive">
-
+      <div class="hero">
+        <div class="page1">
+          <div class="part1">
+            <h1>I'm <span>Jitendra</span> Biswas</h1>
+            <p>
+              This is my official portfolio website . Here you can see my <br />
+              porjects and desings.
+            </p>
+  
+            <div class="explore">
+              <a href="signup.html">
+                <button>Visit Us <i class="ri-arrow-right-line"></i></button>
+              </a>
+            </div>
+  
+            <div class="social">
+              <a href="#"><i class="ri-facebook-fill"></i></a>
+              <a href="#"><i class="ri-instagram-line"></i></a>
+              <a href="#"><i class="ri-linkedin-fill"></i></a>
+            </div>
+          </div>
+  
+          <div class="part2">
+            <img src="image/image-background.png" id="back" alt="" />
+            <div class="profile">
+              <img src="image/image.png" alt="" id="front" />
+            </div>
+          </div>
+  
+          <div class="sidenav">
+            <ul>
+              <a href="index.html">
+                <li>Home</li>
+              </a>
+              <a href="about.html">
+                <li>About</li>
+              </a>
+              <a href="contact.html">
+                <li>Contact</li>
+              </a>
+              <a href="#">
+                <li>Services</li>
+              </a>
+              <a href="#">
+                <li>Hire Me</li>
+              </a>
+            </ul>
+            <i class="ri-close-line"></i>
+          </div>
         </div>
+      </div>
+      </div>
 
-        <h1>I'm <span>Jitendra</span> Biswas</h1>
-        <p>This is my official portfolio website . Here you can see my <br> porjects and desings.</p>
-       <div class="button">
-        <button id="btn"><a href="explore.html">Visit Us <i class="ri-arrow-right-line"></i></a></button>
-        <button id="resume"><a href="#">Download Resume! <i class="ri-arrow-right-line"></i></a></button>
-        <button id="sign-in-btn"><a href="signup.html">Signin</a></button>
-       </div>
-        <div class="icons">
-            <a href="https://www.facebook.com/anish.biswash.3?mibextid=ZbWKwL" target="-blank"><i class="ri-facebook-fill"></i></a>
-            <a href="https://www.instagram.com/biswashanish/?utm_source=qr&igsh=MXFneXlvYzV0eDU4bA%3D%3D"><i class="ri-instagram-line"></i></a>
-            <a href="#"><i class="ri-linkedin-box-fill"></i></a>
-            
-        </div>
-    </div>
-    <div class="profile">
-        <img src="image-background.png" alt="" id="back">
-        <img src="image.png" alt="" id="anish">
-    </div>
-</main>
-
-    
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+      integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"
+      integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
