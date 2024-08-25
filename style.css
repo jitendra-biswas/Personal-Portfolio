@@ -3,7 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
-    color: white;
+    color: #f1f1f1;
     font-family:Arial, Helvetica, sans-serif;
 }
 
@@ -71,7 +71,7 @@ ul a li:hover{
 
 
 .join button{
-    background-color: white;
+    background-color: #f1f1f1;
     padding: 8px 17px;
     outline: none;
     border: none;
@@ -131,7 +131,7 @@ ul a li:hover{
 
 .explore button{
     border: none;
-    background-color: white;
+    background-color: #f1f1f1;
     color: black;
     border-radius: 10px;
     padding: 5px 10px;
@@ -157,7 +157,7 @@ ul a li:hover{
 }
 
 .social a i{
-    color:white;
+    color:#f1f1f1;
     font-size: 27px;
 }
 
@@ -200,6 +200,70 @@ ul a li:hover{
 }
 
 
+.page2{
+    width: 100vw;
+    height: 100vh;
+    background-color: #008080;
+    padding: 50px;
+    overflow: hidden;
+}
+
+.page2 h1{
+    color: black;
+}
+
+.page2 span{
+    color: black;
+}
+
+.page2 .projects{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+
+.page2 .projects .project1,.project2,.project3{
+    width: 30vw;
+    height: 60vh;
+    border-top: 2px solid black;
+    padding: 20px;
+}
+
+.project2{
+    margin-top: -100px;
+}
+
+.project3{
+    margin-top: -200px;
+}
+
+.project-container{
+    width: 100%;
+    height: 270px;
+}
+
+.image1{
+    background-image: url(image/animation.png);
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+}
+
+.image2{
+    background-image: url(image/nike.png);
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+}
+
+.image3{
+    background-image: url(image/netflix.png);
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+}
 @media (max-width:1290px){
 
 .part2 #front{
@@ -340,7 +404,25 @@ ul a li:hover{
         right: 5%;
         font-size: 30px;
     }
+     
+    .page2{
+        height: fit-content;
+        display: flex;
+        flex-direction: column;
+        gap:50px;
+    }
+.page2 .projects{
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 100px;
+}
 
-
+.page2 .projects .project1,.project2,.project3{
+    width: 90vw;
+    height: fit-content;
+}
 
 }

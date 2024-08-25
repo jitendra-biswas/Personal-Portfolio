@@ -102,4 +102,26 @@ var tl = gsap.timeline()
         tl.reverse()
     })
 
+    gsap.from(".heading",{
+        opacity:0,
+        y:50,
+        duration:0.5,
+        delay:0.5,
+        stagger:0.3,
+        scrollTrigger:{
+            trigger:".page2",
+            scroller: "body",
+        }
+    })
 
+    gsap.from(".project1,.project2,.project3",{
+        opacity:0,
+        y:50,
+        duration:0.5,
+        delay:0.7,
+        stagger:0.3,
+        scrollTrigger:{
+            trigger:".page2",
+            scroller: "body",
+        }
+    })
