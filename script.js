@@ -125,3 +125,64 @@ var tl = gsap.timeline()
             scroller: "body",
         }
     })
+
+    gsap.from(".footer-part1 .logo h1",{
+        opacity:0,
+        y:50,
+        duration:0.5,
+        delay:0.2,
+        scrollTrigger:{
+            trigger:".footer-part1",
+            scroller: "body",
+            start:"top 80%"
+        }
+    })
+
+    gsap.from(".footer-part1 .icons i",{
+        opacity:0,
+        y:30,
+        duration:1,
+        delay:0.5,
+        stagger:0.2,
+        scrollTrigger:{
+            trigger:".footer-part1",
+            scroller: "body",
+            start:"top 80%"
+        }
+    })
+  
+    gsap.from(".footer-part1 .gmail p",{
+        opacity:0,
+        x:-50,
+        duration:1,
+        delay:0.4,
+        scrollTrigger:{
+            trigger:".footer-part1",
+            scroller: "body",
+            start:"top 80%"
+        }
+    })
+
+    gsap.from(".footer-part2 #topic",{
+        opacity:0,
+        y:50,
+        duration:1,
+        delay:0.5,
+        scrollTrigger:{
+            trigger:".footer-part1",
+            scroller: "body",
+            start:"top 80%"
+        }
+    })
+
+    gsap.from(".footer-part2 .library a",{
+        opacity:0,
+        y:50,
+        duration:1,
+        delay:0.7,
+        scrollTrigger:{
+            trigger:".footer-part1",
+            scroller: "body",
+            start:"top 80%"
+        }
+    })
