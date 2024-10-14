@@ -3,7 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
-    color: #f1f1f1;
+    color:lightsteelblue;
     font-family:Arial, Helvetica, sans-serif;
 }
 
@@ -15,10 +15,20 @@ body::-webkit-scrollbar{
     width: 0;
 }
 
+.main{
+    width: 100vw;
+    height: fit-content;
+    background-image: url(https://images.unsplash.com/photo-1642850356603-ca6295576249?q=80&w=1854&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
 nav{
     width: 100vw;
     height: 70px;
-    background: linear-gradient(90deg, rgb(0, 0, 0) 0%, rgb(18, 18, 18) 47%, rgb(20, 19, 19) 70%, rgba(9,9,9,1) 100%);
+    /* background: linear-gradient(90deg, rgb(0, 0, 0) 0%, rgba(18, 18, 18, 0.744) 47%, rgb(20, 19, 19) 70%, rgba(9,9,9,1) 100%); */
+    background-color: rgba(0, 0, 0, 0.666);
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -41,9 +51,9 @@ nav a{
 }
 
 .logo h2{
-    font-family: cursive;
-    color: red;
-    font-size: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: rgb(224, 29, 29);
+    font-size: 25px;
 }
 
 ul{
@@ -61,27 +71,27 @@ ul a li{
 
 
 ul a li:hover{
-    color:#f63f48;
+    color:rgb(237, 41, 41);
     transition: 0.2s ease-in;
 }
 
 #home{
-    color: #f63f48;
+    color: rgb(237, 41, 41);
 }
 
 
 .join button{
-    background-color: #f1f1f1;
+    background-color:lightsteelblue;
     padding: 8px 17px;
     outline: none;
     border: none;
     border-radius: 25px;
-
+    box-shadow: 5px 8px 15px rgba(87, 87, 87, 0.886);
 }
 
 .join button:hover{
     cursor: pointer;
-    background-color:#f63f48;
+    background-color:rgb(237, 41, 41);
     color: black;
     transition: 0.2s ease-in;
 }
@@ -103,7 +113,8 @@ ul a li:hover{
 .page1{
     width: 100vw;
     height: calc(100vh - 70px);
-    background: linear-gradient(90deg, rgb(0, 0, 0) 0%, rgb(18, 18, 18) 47%, rgb(20, 19, 19) 70%, rgba(9,9,9,1) 100%);
+    /* background: linear-gradient(90deg, rgb(0, 0, 0) 0%, rgb(18, 18, 18) 47%, rgb(20, 19, 19) 70%, rgba(9,9,9,1) 100%); */
+    background-color: rgba(0, 0, 0, 0.666);
     display: flex;
 }
 
@@ -118,10 +129,11 @@ ul a li:hover{
 
 .part1 h1{
     font-size: 60px;
+    color:lightsteelblue;
 }
 
 .part1 h1 span{
-    color: #f63f48;
+  color: rgb(235, 58, 58);
 }
 
 .part1 p{
@@ -131,7 +143,7 @@ ul a li:hover{
 
 .explore button{
     border: none;
-    background-color: #f1f1f1;
+    background-color:lightsteelblue;
     color: black;
     border-radius: 10px;
     padding: 5px 10px;
@@ -142,7 +154,7 @@ ul a li:hover{
 
 .explore button:hover{
     cursor: pointer;
-    background-color:#f63f48;
+    background-color:rgb(237, 41, 41);
     transition:0.3s ease-in;
 }
 
@@ -157,13 +169,14 @@ ul a li:hover{
 }
 
 .social a i{
-    color:#f1f1f1;
+    color:lightsteelblue;
     font-size: 27px;
+    text-shadow: 5px 8px 5px rgb(121, 120, 120);
 }
 
 .social a i:hover{
     cursor: pointer;
-    color:#f63f48;
+    color:rgb(237, 41, 41);
 }
 .part2{
     width: 600px;
@@ -184,7 +197,7 @@ ul a li:hover{
 
 .part2 #back{
     width: 500px;
-    filter: drop-shadow(2px 2px 8px black);
+    filter: drop-shadow(2px 2px 8px black) saturate(0.);
     
 }
 
@@ -203,17 +216,17 @@ ul a li:hover{
 .page2{
     width: 100vw;
     height: 100vh;
-    background: radial-gradient(circle, rgb(22, 17, 39) 0%, rgba(0,0,0,1) 100%);
+    background-color: rgba(0, 0, 0, 0.666);
     padding: 50px;
     overflow: hidden;
 }
 
 .page2 h1{
-    color: #f1f1f1;
+    color:lightsteelblue;
 }
 
 .page2 span{
-    color: #f1f1f1;
+    color:lightsteelblue;
 }
 
 .page2 .projects{
@@ -268,7 +281,7 @@ ul a li:hover{
 footer{
     width: 100vw;
     height: 60vh;
-    background: linear-gradient(90deg, rgb(0, 0, 0) 0%, rgb(18, 18, 18) 47%, rgb(20, 19, 19) 70%, rgba(9,9,9,1) 100%);
+    background-color: rgba(0, 0, 0, 0.666);
     padding: 50px;
     display: flex;
     justify-content: space-between;

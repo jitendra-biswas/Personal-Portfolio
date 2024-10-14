@@ -3,7 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
-    color: white;
+    color: lightsteelblue;
     font-family:Arial, Helvetica, sans-serif;
     overflow: hidden;
 }
@@ -67,7 +67,7 @@ ul a li:hover{
 }
 
 .join button{
-    background-color: white;
+    background-color: lightsteelblue;
     padding: 8px 17px;
     outline: none;
     border: none;

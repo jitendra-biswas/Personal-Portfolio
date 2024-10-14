@@ -1,7 +1,7 @@
-gsap.from(".part2 img",{
+gsap.from(".feedback",{
     opacity:0,
     duration:1,
-    y:100,
+    x:100,
     delay:0.5
 })
 

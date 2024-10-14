@@ -3,7 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
-    color: white;
+    color: lightsteelblue;
     font-family:Arial, Helvetica, sans-serif;
 }
 
@@ -15,10 +15,20 @@ body::-webkit-scrollbar{
     width: 0;
 }
 
+.main{
+    width: 100vw;
+    height: 100vh;
+    background-image: url(https://images.unsplash.com/photo-1642850356603-ca6295576249?q=80&w=1854&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+
 nav{
     width: 100vw;
     height: 70px;
-    background: linear-gradient(90deg, rgba(16,16,16,1) 0%, rgb(31, 31, 31) 47%, rgb(31, 31, 31) 70%, rgba(9,9,9,1) 100%);;
+    background-color: rgba(0, 0, 0, 0.666);
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -69,7 +79,7 @@ ul a li:hover{
 
 
 .join button{
-    background-color: white;
+    background-color: lightsteelblue;
     padding: 8px 17px;
     outline: none;
     border: none;
@@ -101,7 +111,7 @@ ul a li:hover{
 .page1{
     width: 100vw;
     height: calc(100vh - 70px);
-    background: linear-gradient(90deg, rgba(16,16,16,1) 0%, rgb(31, 31, 31) 47%, rgb(31, 31, 31) 70%, rgba(9,9,9,1) 100%);;
+    background-color: rgba(0, 0, 0, 0.666);
     display: flex;
     flex-direction: row-reverse;
 }
