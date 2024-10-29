@@ -44,14 +44,9 @@ nav a{
     align-items: center;
 }
 
-.logo img{
-    width: 30px;
-}
-
-.logo h2{
-    font-family: cursive;
-    color: red;
-    font-size: 20px;
+.logo h1{
+    font-size: 30px;
+    margin-left: 30px;
 }
 
 ul{
