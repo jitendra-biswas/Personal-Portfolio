@@ -4,7 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>WEBX</title>
-    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css"
+    />
+
     <link
       href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
       rel="stylesheet"
@@ -14,41 +18,47 @@
       rel="icon"
       href="image/png-transparent-red-hot-chilli-logo-thumbnail-fotor-bg-remover-20240818162639.png"
     />
+
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <div class="main">
       <header>
         <nav>
           <div class="logo">
-            <a href="#">
-              <img src="image/png-transparent-red-hot-chilli-logo-thumbnail-fotor-bg-remover-20240818162639.png" alt="">
-              <h2>WebX</h2>
+            <a href="#page1">
+              <img
+                src="image/png-transparent-red-hot-chilli-logo-thumbnail-fotor-bg-remover-20240818162639.png"
+                alt=""
+              />
+              <h2>Web<span>X</span></h2>
             </a>
           </div>
           <ul>
-            <a href="index.html">
+            <a href="#page1">
               <li id="home">Home</li>
             </a>
-            <a href="about.html">
+            <a href="#about">
               <li>About</li>
             </a>
-            <a href="contact.html">
-              <li>Contact</li>
+
+            <a href="#Projects">
+              <li>Projects</li>
             </a>
+
             <a href="">
-              <li>Services</li>
+              <li>Animation</li>
             </a>
-            <a href="">
-              <li>Hire Me</li>
+
+            <a href="#contact">
+              <li>Contact Us</li>
             </a>
           </ul>
 
           <div class="join">
-            <button>
-              <a href="signup.html"
-                >Join Us <i class="ri-arrow-right-line"></i
-              ></a>
-            </button>
+            <a href="#contact">
+              <button>Contact Us <i class="ri-arrow-right-line"></i></button>
+            </a>
           </div>
 
           <div class="bar"><i class="ri-bar-chart-horizontal-line"></i></div>
@@ -56,118 +66,235 @@
       </header>
 
       <div class="hero">
-        <div class="page1">
+        <div class="page1" id="page1">
           <div class="part1">
             <h1>I'm <span>Jitendra</span> Biswas</h1>
             <p>
-              This is my official portfolio website . Here you can see my <br />
-              porjects and desings.
+              Crafting exceptional digital experiences with modern web
+              technologies. Turning complex problems into elegant solutions.
             </p>
-  
+
             <div class="explore">
               <a href="#">
                 <button>Visit Us <i class="ri-arrow-right-line"></i></button>
               </a>
             </div>
-  
+
             <div class="social">
-              <a href="#"><i class="ri-facebook-fill"></i></a>
-              <a href="#"><i class="ri-instagram-line"></i></a>
-              <a href="#"><i class="ri-linkedin-fill"></i></a>
+              <a href="#"><i class="ri-facebook-fill" id="facebook"></i></a>
+              <a href="#"> <i class="ri-linkedin-fill" id="linkdin"></i></a>
+              <a href="#"> <i class="ri-github-fill" id="github"></i></a>
             </div>
           </div>
-  
+
           <div class="part2">
             <img src="image/image-background.png" id="back" alt="" />
             <div class="profile">
               <img src="image/image.png" alt="" id="front" />
             </div>
           </div>
-  
+
           <div class="sidenav">
             <ul>
-              <a href="index.html">
+              <a href="#page1">
                 <li>Home</li>
               </a>
-              <a href="about.html">
+              <a href="#about">
                 <li>About</li>
               </a>
-              <a href="contact.html">
-                <li>Contact</li>
+              <a href="#Projects">
+                <li>Projects</li>
               </a>
-              <a href="#">
-                <li>Services</li>
+              <a href="#animation">
+                <li>Animation</li>
               </a>
-              <a href="#">
-                <li>Hire Me</li>
+              <a href="#contact">
+                <li>Contact Us</li>
               </a>
             </ul>
             <i class="ri-close-line"></i>
           </div>
         </div>
 
-        <div class="page2">
-          <div class="heading">
-            <h1>Latest <br><span>Projects</span></h1>
+        <!-- about section -->
+
+        <div class="About" id="about">
+          <h1 id="about-heading">About <span>Me</span></h1>
+          <div class="profile">
+            <div class="profile-image">
+              <div class="image">
+                <img src="image/image.png" alt="" />
+              </div>
+
+              <div class="contacts">
+                <div class="icons">
+                  <i class="ri-facebook-fill"></i>
+                  <i class="ri-linkedin-fill"></i>
+                  <i class="ri-github-fill"></i>
+                </div>
+                <p>Stay With Me Profiles <i class="ri-arrow-right-line"></i></p>
+              </div>
+            </div>
+
+            <div class="discription">
+              <h1>About <span>Me</span></h1>
+              <p>
+                Hi! I'm a Frontend Developer crafting interactive, animated, and user-friendly web experiences. With expertise in HTML, CSS, JavaScript, and frameworks like React, I bring designs to life with clean code and smooth animations. <br />
+                <br />
+                I’m passionate about creating websites that engage, inspire, and perform flawlessly across all devices. Let’s build something amazing together! 🚀
+              </p>
+
+              <div class="programming-language">
+                <div class="html program">
+                  <img src="image/html.png" alt="" /><span>HTML</span>
+                </div>
+                <div class="css program">
+                  <img src="image/css.png" alt="" /><span>CSS</span>
+                </div>
+                <div class="js program">
+                  <img src="image/js.png" alt="" /><span>JavaScript</span>
+                </div>
+              </div>
+            </div>
           </div>
+        </div>
 
+        <div class="page2" id="Projects">
+          <h1>Projects</h1>
           <div class="projects">
-            <div class="project1">
-              <a href="https://gsapanim.netlify.app/">
-                <h1>Landing Page Design</h1>
-                <div class="project-container image1">
+            <div class="project">
+              <div class="project-image">
+                <img src="image/nike.png" alt="" />
+              </div>
+              <div class="project-discription">
+                <h2>Nike Clone</h2>
+                <p>
+                  Nike.com is the official online store for Nike, offering a
+                  wide range of athletic footwear, apparel, and accessories,
+                  along with custom product options and the latest sports
+                  innovations.
+                </p>
+                <div class="buttons">
+                  <a href="https://nykec.netlify.app" target="_blank">
+                    <button id="live">
+                      View Live <i class="ri-external-link-line"></i>
+                    </button>
+                  </a>
+                  <a href="https://github.com/jitendra-biswas/nikeClone.git" target="_blank">
+                    <button id="code">
+                      <i class="ri-github-fill" id="github"> </i>View Code
+                    </button>
+                  </a>
+                </div>
+              </div>
+            </div>
 
+            <div class="project">
+              <div class="project-image">
+                <img src="image/netflix.png" alt="" />
+              </div>
+              <div class="project-discription">
+                <h2>Netflix Clone</h2>
+                <p>
+                  Netflix is a streaming service that offers a wide variety of
+                  movies, TV shows, and original content, accessible through
+                  subscriptions on multiple devices.
+                </p>
+                <div class="buttons">
+                  <a href="https://cnclone.netlify.app" target="_blank">
+                    <button id="live">
+                      View Live <i class="ri-external-link-line"></i>
+                    </button>
+                  </a>
+                  <a href="https://github.com/jitendra-biswas/NetflixClone.git" target="_blank">
+                    <button id="code">
+                      <i class="ri-github-fill" id="github"> </i>View Code
+                    </button>
+                  </a>
                 </div>
-              </a>
+              </div>
             </div>
-            <div class="project2">
-              <a href="https://nykec.netlify.app/">
-                <h1>Nike Clone</h1>
-                <div class="project-container image2">
-                  
+
+            <div class="project">
+              <div class="project-image">
+                <img
+                  src="https://images.unsplash.com/photo-1483058712412-4245e9b90334?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTh8fHByb2plY3QlMjBmb3IlMjBwb3J0Zm9saW98ZW58MHx8MHx8fDA%3D"
+                  alt=""
+                  id="digital-clock"
+                />
+              </div>
+              <div class="project-discription">
+                <h2>WebScape 3D</h2>
+                <p>
+                  A 3D web project leverages interactive 3D graphics to deliver
+                  an immersive, engaging user experience, enhancing visual
+                  storytelling and interactivity on the web.
+                </p>
+                <div class="buttons">
+                  <a href="#">
+                    <button id="live">
+                      View Live <i class="ri-external-link-line"></i>
+                    </button>
+                  </a>
+                  <a href="#">
+                    <button id="code">
+                      <i class="ri-github-fill" id="github"> </i>View Code
+                    </button>
+                  </a>
                 </div>
-            </div>
-            <div class="project3">
-              <a href="https://cnclone.netlify.app/">
-                <h1>Netflix Clone</h1>
-                <div class="project-container image3">
-                  
-                </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
 
-      <footer>
-        <div class="footer-part1">
-          <div class="logo"><h1>WEBX</h1></div>
-          <div class="icons">
-            <a href="#" id="facebook"><i class="ri-facebook-fill"></i></a>
-            <a href="#" id="insta"><i class="ri-instagram-line"></i></a>
-            <a href="#" id="linkdin"><i class="ri-linkedin-fill"></i></a>
+      <footer id="contact">
+        <h1>Contact <span>Us</span></h1>
+        <div class="contact-section">
+          <div class="left">
+            <h1>Web <span>X</span></h1>
+            <div class="personal-details">
+              <div class="phone">
+                <i class="ri-phone-fill"></i> +977 9819999854
+              </div>
+              <div class="gmail">
+                <i class="ri-mail-fill"></i> jitendrabiswas12344@gmail.com
+              </div>
+              <div class="location">
+                <i class="ri-map-pin-2-fill"></i> Kathmandu, Nepal
+              </div>
+            </div>
+            <div class="social-links">
+              <a href="#"><i class="ri-facebook-fill"></i></a>
+              <a href="#"><i class="ri-linkedin-fill"></i></a>
+              <a href="#"><i class="ri-github-fill"></i></a>
+            </div>
           </div>
-          <div class="gmail">
-            <p>jitendrabiswas12344@gmail.com</p>
+          <div class="right">
+            <form action="https://api.web3forms.com/submit" method="POST">
+              <input type="hidden" name="access_key" value="44181882-fe37-4b7f-903b-4c5886b30631">
+              <div class="name">
+                <h3>Name</h3>
+                <input type="text" name="name" placeholder="Enter Your Name" required/>
+              </div>
+              <div class="email">
+                <h3>Email</h3>
+                <input type="email" name="email" placeholder="Enter Your Email" required/>
+              </div>
+              <div class="message">
+                <h3>Message</h3>
+                <textarea
+                  name="message"
+                  placeholder="Enter Your Message" required></textarea>
+              </div>
+              <button type="submit">Send Message</button>
+            </form>
           </div>
-        </div>
-
-        <div class="footer-part2">
-          <h1 id="topic">What I Learned</h1>
-           <div class="library">
-            <a href="">
-              <img src="https://icones.pro/wp-content/uploads/2021/05/icone-html-orange.png" alt="">
-             </a>
-             <a href="">
-              <img src="https://cdn4.iconfinder.com/data/icons/flat-brand-logo-2/512/css3-512.png" alt="">
-             </a>
-             <a href=""><h1 id="gsap">GSAP</h1></a>
-           </div>
-
-
         </div>
       </footer>
-      </div>
+    </div>
 
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
       integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
@@ -180,6 +307,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     ></script>
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@beta/bundled/locomotive-scroll.min.js"></script>
     <script src="script.js"></script>
   </body>
 </html>
