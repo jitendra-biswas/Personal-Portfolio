@@ -165,7 +165,7 @@ ul a li:hover {
 
 .part1 h1 {
     width: fit-content;
-    font-size: 60px;
+    font-size: 3.7vw;
     color: var(--bwhite);
     font-weight: 600;
 }
@@ -675,12 +675,17 @@ footer form button:active{
     background-color: #0e0b0b;
     transition: all 0.2s;
 }
-@media (max-width:1200px) {
+@media (max-width:1286px) {
 
     .part2 #front {
-        width: 400px;
+        width: 380px;
         filter: contrast(1.2);
         margin-top: 60%;
+    }
+    .part1 p {
+        width: 70%;
+        font-size: 16px;
+    
     }
 
 }
@@ -693,6 +698,8 @@ footer form button:active{
         filter: contrast(1.2);
         margin-top: 65%;
     }
+
+   
 
 }
 
