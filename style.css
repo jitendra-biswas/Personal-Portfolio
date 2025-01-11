@@ -197,7 +197,7 @@ ul a li:hover {
 }
 
 #resume{
-    background-color: rgb(29, 29, 41);
+    background-color: var(--black);
     color: white;
     border: 1px solid var(--gray);
     margin-left: 10px;
@@ -205,13 +205,11 @@ ul a li:hover {
 
 #resume:hover{
     cursor: pointer;
-    background-color: var(--black);
-    box-shadow: 0 0 20px rgba(59, 7, 228, 0.819);
+    box-shadow: 0 0 20px rgb(66, 66, 66);
     transition: all ease-in 0.2s;
 }
 .explore button:hover {
     cursor: pointer;
-    background-color: #E62E5C;
     box-shadow: 0 0 20px rgba(228, 51, 7, 0.819);
     transition: all ease-in 0.2s;
 }
