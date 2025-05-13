@@ -36,7 +36,7 @@ var header_page1 = function(){
     scale: 2,
   });
   
-  gsap.from(".part1 h1", {
+  gsap.from(".part1 h1,h2,h3", {
     opacity: 0,
     y: 30,
     duration: 0.5,
