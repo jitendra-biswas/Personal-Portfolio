@@ -456,9 +456,17 @@ ul a li:hover:after{
 
 .programming-language .html,.css,.js span{
     font-size: 20px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
+.programming-language .program {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.programming-language .program span{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; 
+}
 
 /*Starting of page2*/
 
