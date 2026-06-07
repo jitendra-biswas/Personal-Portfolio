@@ -36,7 +36,7 @@ var header_page1 = function(){
     scale: 2,
   });
   
-  gsap.from(".part1 h1,h2,h3", {
+  gsap.from(".part1 h1,h2,h4", {
     opacity: 0,
     y: 30,
     duration: 0.5,
@@ -140,4 +140,20 @@ var about = function(){
 about();
 
 
-/*CODE FOR FOOTER*/
+/*CODE FOR PROJECTS*/
+ var projects = function(){
+  var projecttl = gsap.timeline({
+    scrollTrigger:{
+      trigger:".Page2",
+      scroller: "body",
+    }
+  })
+  
+  projecttl.from(".project",{
+    opacity: 0,
+    y:50,
+    duration:1,
+    stagger:0.2,
+  },)
+ }
+projects();
