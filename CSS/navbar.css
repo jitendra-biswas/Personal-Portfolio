@@ -1,0 +1,145 @@
+
+nav {
+    height: 70px;
+    background-color:var(--black);
+    backdrop-filter: blur(19px);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0vw 10vw;
+    position: fixed;
+    z-index: 99;
+    left: 0;
+    right: 0;
+    box-sizing: border-box;
+}
+
+nav a {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.logo a {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 30px;
+}
+
+.logo h2 {
+    font-family: sans-serif;
+    font-size: 23px;
+    color: white;
+}
+
+.logo h2 span{
+    color: var(--red);
+}
+
+ul {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+ul a li {
+    list-style: none;
+    font-size: 18px;
+    font-weight: lighter;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: rgb(76, 75, 75);
+    position: relative;
+   
+}
+
+ul a li::after{
+    content: " ";
+    position: absolute;
+    width: 0%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    border-bottom: 2px solid rgb(226, 26, 26);
+     transition: all ease-in 0.2s;
+}
+
+
+
+ul a li:hover {
+    transition: all ease-in 0.2s;
+}
+
+ul a li:hover:after{
+    width: 100%;
+}
+
+#home{
+    color: rgb(226, 26, 26);
+}
+
+.join button {
+    background-color: var(--red);
+    padding: 7px 17px;
+    outline: none;
+    border: none;
+    border-radius: 25px;
+    box-shadow: 0px 2px 7px rgba(206, 9, 58, 0.518);
+}
+
+.join button:hover {
+    cursor: pointer;
+    color: var(--bwhite);
+    background-color: #d81e56;
+    transition: all 0.2s;
+}
+
+.join a button {
+    font-size: 17px;
+    font-weight: 600;
+    color: var(--bwhite);
+}
+
+.join a button i {
+   color: var(--bwhite);
+   font-weight: 500;
+}
+
+.bar {
+    display: none;
+}
+
+
+
+/*RESPONSIVE PART*/
+
+@media (max-width:960px) {
+
+    .join button {
+        display: none;
+    }
+
+    nav ul {
+        display: none;
+    }
+
+    .bar {
+        display: block;
+    }
+
+    .bar i {
+        font-size: 23px;
+    }
+
+    .explore button {
+        float: left;
+    }
+
+
+    ul a li {
+        font-size: 20px;
+        color: var(--bwhite);
+       
+    }
+}

@@ -131,7 +131,7 @@ var about = function(){
     duration:0.5
   },)
   
-  abouttl.from(".programming-language .program",{
+  abouttl.from(".skill",{
     opacity:0,
     y:50,
     stagger:0.13

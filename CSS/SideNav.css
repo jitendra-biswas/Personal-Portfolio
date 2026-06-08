@@ -1,0 +1,53 @@
+.sidenav {
+    display: none;
+}
+
+
+/*For Responsive*/
+
+@media (max-width:960px) {
+
+    .main {
+       background-color: var(--black);
+       padding-bottom: 20px;
+    }
+
+
+    .sidenav {
+        display: block;
+        width: 70vw;
+        height: 100vh;
+        position: fixed;
+        background-color: #121212d8;
+        top: 0;
+        backdrop-filter: blur(10px);
+        right: -100%;
+        z-index: 100;
+    }
+
+    .sidenav ul {
+        flex-direction: column;
+        position: absolute;
+        padding: 70px 50px;
+        gap: 30px;
+        align-items: flex-start;
+
+    }
+
+    ul a li {
+        font-size: 20px;
+        color: var(--bwhite);
+       
+    }
+
+    .sidenav i {
+        background-color: var(--black);
+        color: var(--bwhite);
+        padding: 5px;
+        border-radius: 50%;
+        position: absolute;
+        top: 3%;
+        right: 10%;
+        font-size: 30px;
+    }
+}
