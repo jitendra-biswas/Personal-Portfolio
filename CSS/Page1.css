@@ -218,7 +218,7 @@
 @media (max-width:960px) {
 
     .page1 {
-        height: 100vh;
+        min-height: 100vh;
         flex-direction: column-reverse;
         gap:10px;
     }
@@ -267,9 +267,9 @@
 
     .part2 .profile {
         width: 80vw;
-        height: 40vh;
+        height: 60vh;
         background-image: url("../image/image.png");
-        background-size: 300px;
+        background-size: 230px;
         background-position-x: center;
         background-repeat: no-repeat;
         border-radius: 50%;
