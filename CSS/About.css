@@ -115,7 +115,6 @@ i {
 
 .Technical_skills{
   display: flex;
-  justify-content: center;
   gap: 20px;
   margin-top: 20px;
   flex-wrap: wrap;
@@ -198,6 +197,13 @@ i {
     text-align: center;
     margin-top: -150px;
   }
+
+  .Technical_skills{
+  justify-content: center;
+  padding: 0px 100px;
+  overflow: hidden;
+ 
+}
 
   .profile .About-social-links {
     display: flex;
